@@ -1,8 +1,10 @@
 import os
 import requests
 import pandas as pd
+from dotenv import load_dotenv
 from pandas.tseries.holiday import USFederalHolidayCalendar
 
+load_dotenv()
 API_KEY = os.environ["EIA_API_KEY"]
 URL = "https://api.eia.gov/v2/electricity/rto/region-data/data/"
 
